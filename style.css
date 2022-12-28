@@ -22,35 +22,38 @@
 
 html, body{
     font-size: 0.9375rem;
-    height: 97vh;
+    height: 96vh;
     position: relative;
     color: white;
     background-color: var(--mainBackground);
 }
 
 .main-content{
-    display: block;
-    margin: 8px;
     background-color: var(--cardBackground);
-    width: 62.5%;
+    width: 65%;
     border-radius: 0.9375rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-}
-
-#container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .left{
-    border: 2px solid #ccc;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51%; 
+    height: 45vh;
 }
+
 #right{
+    width: 50%;
     position: relative;
+    border-radius: 0 0.8375rem 0.9375rem 0;
+    overflow: hidden;
 }
 #right::before{
     content: "";
@@ -63,9 +66,11 @@ html, body{
     background-color: var(--SoftVioletOverlay);
 }
 #container #right img{
-    object-fit: cover;
+    object-fit: contain;
+    max-width: 100% !important;
+    max-height: 100%;
     border-radius: 0 0.8375rem 0.9375rem 0;
-   ;
+    border-radius: 0 0.8375rem 0.9375rem 0;
 }
 
 .red{
@@ -99,9 +104,10 @@ html, body{
 
 .foot{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-foot h1{
+
+.foot h1{
     font-size:15px;
 }
 
