@@ -130,7 +130,7 @@ html, body{
     }
     .mobile{
         display: block;
-        
+
 
     }
 
@@ -148,10 +148,6 @@ html, body{
 
     #right{
         border-radius: 0.8375rem 0 0 ;
-    }
-
-    #right #left{
-        height: inherit;
     }
 
     .head{
@@ -178,4 +174,5 @@ html, body{
         margin: 1.25rem;
     }
 
+    
 }
