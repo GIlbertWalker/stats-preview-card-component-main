@@ -41,11 +41,15 @@ html, body{
     overflow: hidden;
 }
 
+.mobile{
+    display: none;
+}
+
 .left{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 52%;
 }
 
 #right{
@@ -123,16 +127,24 @@ html, body{
     .main-content{
         display: flex;
         flex-direction: column-reverse;
-        height: 70vh;
+    }
+    .mobile{
+        display: block;
+        
+
+    }
+
+    .desktop{
+        display: none;
     }
 
     .left{
-        height: 50vh;
         font-size: 0.9375rem;
         width: 100% ;
         padding: 1.875rem;
         margin: 0;
     }
+
 
     #right{
         border-radius: 0.8375rem 0 0 ;
